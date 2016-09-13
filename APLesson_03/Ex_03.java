@@ -5,7 +5,7 @@ public class Ex_03{
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Tip Calculator");
 		System.out.println("How was your service? (1-10)");
-		double quality = 0.025*kb.nextInt();
+		double quality = 0.03*kb.nextInt();
 		System.out.println("How much was your bill?");
 		double bill = kb.nextDouble();
 		double tip = quality*bill;
