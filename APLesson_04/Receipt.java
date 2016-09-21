@@ -18,7 +18,7 @@ public class Receipt {
 		for(int i=0; i<items.length; i++){
 			System.out.printf("* %18s ........    %3.2f\n", items[i], prices[i]);
 		}
-		System.out.printf("* %18s ........    %3.2f\n", "Subtotal", totals[0]);
+		System.out.printf("*\n* %18s ........    %3.2f\n", "Subtotal", totals[0]);
 		System.out.printf("* %18s ........    %3.2f\n", "Tax", totals[1]);
 		System.out.printf("* %18s ........    %3.2f\n", "Total", totals[2]);
 		System.out.println("__________________________________________\n");
