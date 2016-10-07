@@ -5,11 +5,11 @@ public class Ex_02{
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Welcome to the BMI Calculator");
 		System.out.println("How tall are you? (in)");
-		int height = kb.nextInt();
+		double height = kb.nextInt();
 		System.out.println("How much do you weigh? (lbs)");
-		int weight = kb.nextInt();
-		int bmi = (weight / (height*height))*703;
-		System.out.println("Your BMI is: "+bmi);
+		double weight = kb.nextInt();
+		double bmi = (weight / (height*height))*703;
+		System.out.printf("Your BMI is: %3.0f", bmi);
 		
 	}
 }
