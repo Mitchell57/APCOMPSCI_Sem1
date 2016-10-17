@@ -71,7 +71,7 @@ public class Adventure{
 							} catch(InterruptedException ex) {
 								Thread.currentThread().interrupt();
 							}
-							System.out.println("MATT DAMON\nYou explain your situation and he tells you that you are welcome in his base\nAlthough you never make it back to Earth, you spend the rest of your days eating potatoes with Matt Damon\nYOU WIN!\nCongratulaions! You can survive space!");
+							System.out.println("MATT DAMON\nYou explain your situation and he tells you that you are welcome in his base\nAlthough you never make it back to Earth, you spend the rest of your days eating potatoes with Matt Damon\nYOU WIN!\nCongratulations! You can survive space!");
 						}
 						else if(choice5==2){
 							System.out.println("you lose");
