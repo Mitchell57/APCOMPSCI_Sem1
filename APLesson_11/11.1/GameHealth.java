@@ -28,7 +28,7 @@ public class GameHealth{
 		String output = "Health:	";
 		for(int i=0; i<HEALTHLOAD; i++){
 			if(i<healthCount) output += " @ ";
-			else output += "[]";
+			else output += " [] ";
 		}
 		System.out.println(output);
 	}
