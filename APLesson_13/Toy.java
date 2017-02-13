@@ -24,8 +24,8 @@ public abstract class Toy{
 		name = n;
 	}
 	
-	public void setCount(int n){
-		count = n;
+	public void setCount(int number){
+		count = number;
 	}
 	
 	public void addCount(){
