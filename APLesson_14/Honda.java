@@ -1,4 +1,4 @@
-public class Honda implements Location{
+public class Honda extends Car{
 	double[] loc = {0, 0};
 	
 	public Honda(double[] location){
@@ -7,7 +7,7 @@ public class Honda implements Location{
 	}
 	
 	public int getID(){
-		return (int)(Math.random()*1000000 + 1);
+		return super.getID();
 	}
 	
 	public void move(int x, int y){

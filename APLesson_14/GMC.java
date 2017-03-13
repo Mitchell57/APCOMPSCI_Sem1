@@ -1,4 +1,4 @@
-public class GMC implements Location{
+public class GMC extends Car{
 	double[] loc;
 	public GMC(int x, int y){
 		loc = new double[2];
@@ -7,7 +7,7 @@ public class GMC implements Location{
 	}
 	
 	public int getID(){
-		return (int)(Math.random()*1000000 + 1);
+		return super.getID();
 	}
 	
 	public void move(int x, int y){

@@ -11,6 +11,7 @@ public class Satellite
 
 
        double[] home = {0, 0};
+	   
 
 
        String printout = "\n\n" +
@@ -20,6 +21,19 @@ public class Satellite
        for (Location l : locate)
        {
            printout += "\nLocation for " + l.getID() + ": (" + getLocation(l.getLoc()) + ")";
+       }
+	   
+	   printout += "\n\n" +
+               "==========================" + "\nMovements...";
+			   
+	   for (Location l : locate)
+       {
+           double xChange = (double) Math.round((Math.random()*100 + 1) * 100) / 100;
+		   double yChange = (double) Math.round((Math.random()*100 + 1) * 100) / 100;
+	       double newX = (double) Math.round((l.getLoc()[0] + xChange) * 100) / 100;
+		   double newY = (double) Math.round((l.getLoc()[1] + yChange) * 100) / 100;
+	   
+	       printout += "\nAfter " + l.getID() + " Moved " + ": (" + xChange + ", "+ yChange + ")" + "\nNew Location: (" +  newX + ", "+ newY + ")";
        }
 
 
@@ -47,4 +61,5 @@ public class Satellite
    {
        return loc[0] + ", " + loc[1];
    }
+
 }

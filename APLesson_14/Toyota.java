@@ -1,4 +1,4 @@
-public class Toyota implements Location{
+public class Toyota extends Car{
 	double[] loc = {0, 0};
 	
 	public Toyota(String location){
@@ -7,7 +7,7 @@ public class Toyota implements Location{
 	}
 	
 	public int getID(){
-		return (int)(Math.random()*1000000 + 1);
+		return super.getID();
 	}
 	
 	public void move(int x, int y){
