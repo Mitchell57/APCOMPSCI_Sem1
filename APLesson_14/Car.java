@@ -1,4 +1,4 @@
-public abstract class Car implements Location{
+public class Car implements Location{
 	int id;
 	double[] loc = {0, 0};
 	
