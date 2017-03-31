@@ -15,22 +15,10 @@ public class Magpie2
 	{
 		String response = "";
 		statement = statement.toLowerCase();
-		/** Exercise_01:
-		 * ==================================================
-		 * 	Code that asks the user "Say something, please."
-		 * 	if you enter nothing, or if you accidentally hit
-		 * 	enter. Think to yourself: "What is the length of
-		 * 	an empty String?" */
-		 
 		if(statement.length()<=1){
 			response = "Say something, please.";
 			return response;
 		}
-
-
-		/** To be completed in Exercise_02:
-		 * 	Modify the following code to use the findKeyword
-		 * 	Method (details in "Exercise_02" below. */
 		if (findKeyword(statement, "no", 0) >= 0)
 		{
 			response = "Why so negative?";
@@ -54,17 +42,6 @@ public class Magpie2
 		}
 		
 		else if (statement.indexOf("robinette") >= 0) response = "He sounds like a pretty dank teacher";
-
-		/** Exercise_03(Final)
-		 * ==================================================
-		 * Create additional code (another else if) that
-		 * responds "Tell me more about your pet" if the
-		 * user mentions the word cat, dog, fish, or turtle
-		 * in their statement.
-		 *
-		 * Create addtional code (another else if) that
-		 * responds "He sounds like a pretty dank teacher"
-		 * if you mention "Robinette" in your statement */
 
 		else
 		{

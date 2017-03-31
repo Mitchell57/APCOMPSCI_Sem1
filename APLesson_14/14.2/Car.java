@@ -1,5 +1,6 @@
-public abstract class Car implements Location{
+public class Car implements Location{
 	int id;
+	double[] loc = {0, 0};
 	
 	public Car(){
 		id = makeID();
@@ -11,6 +12,15 @@ public abstract class Car implements Location{
 	
 	public int getID(){
 		return id;
+	}
+	
+	public void move(double x, double y){
+		loc[0] += x;
+		loc[1] += y;
+	}
+	
+	public double[] getLoc(){
+		return loc;
 	}
 	
 }
